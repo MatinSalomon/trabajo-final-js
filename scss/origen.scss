@@ -1,0 +1,70 @@
+/* ! aca comienza la vista desktop */
+@media (max-width: 30000px){
+
+*{
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    margin-left: 50px;
+    grid-template-areas:'header header nav nav'
+                        'main main main main'
+                        'footer footer footer footer' ;
+    background-color: #141414;
+}
+header{
+    display: flex;
+    grid-area: header;
+    height: 50px;
+    ul{
+        display: flex;
+        list-style: none;
+        margin-top: 13px;
+        li{
+            color: white;
+            padding-left: 20px;
+            
+        }
+    }
+    h1{
+        color: #DB202C;
+        text-align: left;
+        font-size: 30px;
+        margin-top: 0px;
+
+    }
+}
+
+nav{
+    grid-area: nav;
+    background-color: pink;
+    height: 50px;
+}
+
+main{
+    grid-area: main;
+    background-color: black;
+    height: 1000px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: red;
+    height: 300px;
+}
+
+}/* ! aca termina la vista desktop */
+
+
+/* ! aca comienza la vista tablet */
+@media (max-width: 1023px){
+
+}/* ! aca termina la vista tablet */
+
+
+
+ /* ! aca empieza el media para movil */
+ @media(max-width:  767px){
+
+ }/* ! aca termina el media para movil */
