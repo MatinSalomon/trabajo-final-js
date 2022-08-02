@@ -1,6 +1,9 @@
+let enviar= document.getElementById("enviar");   
+let peliBuscar = document.getElementById("buscarPeli");
 /**
  * clase para las peliculas
  */
+
 class pelicula{
     constructor (nombre, genero, duracion, precio) {
         this.nombre = nombre;
@@ -44,34 +47,23 @@ for ( const pelicula of peliculasRomance){
  */
 const peliculasTodas = peliculasAccion.concat(peliculasRomance);
 
-/**
- * Comprueba si la pelicula que ingresa el usuario esta en el array @peliculasTodas
- */
-function buscarPeli(){
-    let peliBuscar = prompt("que pelicula buscas: ")
+const buscador = document.getElementById('buscador');
+const btnBuscar = document.getElementById('buscar');
+const resultado = document.getElementById('resultado');
+const filtrarPeli = () =>{
+    resultado.innerHTML = ``;
+    const buscado = buscador.value.toLowerCase() ;
     for(const pelicula of peliculasTodas){
-        if(pelicula.nombre == peliBuscar){
-            console.log("El nombre de la pelicula que buscas es: " + pelicula.nombre)
-            console.log("El genero de la pelicula que buscas es: " + pelicula.genero)
-            console.log("La duracion de la pelicula que buscas es de: " + pelicula.duracion)
-            console.log("El precio de la pelicula que buscas es de : " + pelicula.precio)
-        } 
+        let nombre = pelicula.nombre.toLowerCase() ;
+        if(nombre.indexOf(buscado) !== -1){
+            resultado.innerHTML += `<li>${pelicula.nombre}</li>`
+        }
     }
-    alert("Puedes ver el resultado en la consola")
+    if(resultado.innerHTML == ``){
+        resultado.innerHTML += `<li>No se encontro la pelicula</li>`
+    }
 }
 
-/**
- *  Pregunta al usuario si quiere busca una pelicula o no si la repuesta es no muestra el catalogo de peliculas en la consola y si es si retorna la funcion buscarPeli
- * @returns la funcion buscarPeli
- */
-function buscarSioNo(){
-let buscar = prompt("quieres buscar un pelicula si o no: ")
-if (buscar == "si") {
-    return buscarPeli();
-}else{
-    alert("En consola puedes ver todo nuestro catalago de peliculas con su duracion y genero")
-    console.log(peliculasTodas)
-}
-}
-
-buscarSioNo()
+btnBuscar.addEventListener('click', filtrarPeli)
+buscador.addEventListener('keyup', filtrarPeli)
+filtrarPeli();

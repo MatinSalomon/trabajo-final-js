@@ -31,13 +31,29 @@
   }
   nav {
     grid-area: nav;
-    background-color: pink;
     height: 50px;
+  }
+  nav div {
+    margin-left: 50%;
   }
   main {
     grid-area: main;
     background-color: black;
     height: 1000px;
+  }
+  main div {
+    text-align: center;
+  }
+  main div h3 {
+    color: #fff;
+    font-size: 60px;
+  }
+  main div ul {
+    list-style: none;
+  }
+  main div ul li {
+    font-size: 30px;
+    color: #fff;
   }
   footer {
     grid-area: footer;

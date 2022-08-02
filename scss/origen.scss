@@ -40,14 +40,29 @@ header{
 
 nav{
     grid-area: nav;
-    background-color: pink;
     height: 50px;
+    div{
+        margin-left: 50%;
+    }
 }
-
 main{
     grid-area: main;
     background-color: black;
-    height: 1000px;
+    height: 1000px; 
+    div{
+        text-align: center;
+        h3{
+            color: #fff;
+            font-size: 60px;
+        }
+        ul{
+            list-style: none;
+            li{
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+    }
 }
 
 footer{
