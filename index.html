@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--! Iconos-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--! FUENTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&display=swap" rel="stylesheet">
     <!--! CSS PROPIO -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Netflix/home</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
 </head>
 <body>
+    <main id="login">
+    <h1>Netflix</h1>
+        <button id="btnFormRegi">registrase</button>
+        <button id="btnForm">inciar sesion</button>
 
-    <header>
-        <h1>NETFLIX</h1> 
-        <ul>
-            <li>Inicio</li>
-            <li>Series</li>
-            <li>Peliculas</li>
-            <li>Novedades Populares</li>
-            <li>Mi Lista</li>
-        </ul>
-    </header>
+    <!--! parte login -->
+    <form id="formulario">
+        <button id="salir">x</button>
+        <p>email</p>
+        <input id="email" type="email">
+        <p>contraseña</p>
+        <input id="password" type="password">
+        <button type="submit">iniciar sesion</button>
 
-    <nav>
-        <div>
-            <input id="buscador" type="text">
-            <button id="buscar">Buscar</button>
-        </div>
-    </nav>
 
-    <main> 
-        <div>
-            <h3>Peliculas encontradas</h3>
-            <ul id="resultado"></ul>
-        </div>
-    </main>
+        <a href="registrase.html">registrase</a>
+        </form>
 
-    <footer>
+    <!--! parte registro -->
+    <form id="formularioRegistro">
+        <button id="salir">x</button>
+        <h2>Sing in</h2>
+        <p>nombre</p>
+        <input id="nombre" type="text">
+        <p>apellido</p>
+        <input id="apellido" type="text">
+        <p>email</p>
+        <input id="emailRegistro" type="email">
+        <p>numero</p>
+        <input id="num" type="number">
+        <p>contraseña</p>
+        <input id="passwordRegistro" type="password">
 
-    </footer>
-    <script src="js/main.js"></script>
+
+        <button type="submit">iniciar sesssion</button>
+
+        </form>
+    <script src="../js/login.js"></script>
+</main>
 </body>
 </html>
