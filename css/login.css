@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  font-family: "Martel Sans", sans-serif;
+}
+
+#login {
+  background-color: #000;
+  height: 60vw;
+}
+#login h1 {
+  font-size: 50px;
+  color: #e50913;
+}
+#login #formulario {
+  display: none;
+}
+#login #formularioRegistro {
+  display: none;
+}
+#login #salir {
+  text-align: end;
+  background-color: gray;
+  border: none;
+  color: black;
+}
+#login form {
+  background-color: gray;
+  margin: 50px 30%;
+  margin-bottom: 0px;
+  height: 60%;
+  width: 500px;
+  align-items: center;
+  padding: 50px;
+}
+#login form p {
+  color: #fff;
+  font-size: 20px;
+}
+#login form h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+#login form input {
+  display: block;
+  background-color: #454545;
+  height: 25px;
+  width: 400px;
+  border-bottom: 5px solid #5f421d;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#login form button {
+  background-color: #e50913;
+  color: #fff;
+  width: 410px;
+  height: 50px;
+  font-size: 20px;
+}
+#login form a {
+  display: block;
+}
+
+/*# sourceMappingURL=login.css.map */

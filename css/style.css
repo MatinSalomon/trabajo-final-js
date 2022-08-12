@@ -9,6 +9,7 @@
     grid-template-areas: "header header nav nav" "main main main main" "footer footer footer footer";
     background-color: #141414;
   }
+  /* ? empieza cabecera */
   header {
     display: flex;
     grid-area: header;
@@ -29,6 +30,8 @@
     font-size: 30px;
     margin-top: 0px;
   }
+  /* ? Termina cabecera */
+  /* ? empieza menu */
   nav {
     grid-area: nav;
     height: 50px;
@@ -55,11 +58,14 @@
     font-size: 30px;
     color: #fff;
   }
+  /* ? termina menu */
+  /* ? empieza pie de pagina */
   footer {
     grid-area: footer;
     background-color: red;
     height: 300px;
   }
+  /* ? termina pie de pagina */
 } /* ! aca termina la vista desktop */
 /* ! aca comienza la vista tablet */
 /* ! aca termina la vista tablet */

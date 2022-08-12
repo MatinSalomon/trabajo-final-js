@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    font-family: "Martel Sans", sans-serif;
+}
+
+#login{
+    background-color: #000;
+    height: 60vw;
+    h1{
+        font-size: 50px;
+        color: #e50913;
+    }
+    #formulario{
+        display: none;
+    }
+    #formularioRegistro{
+        display: none;
+    } 
+    #salir{
+            text-align: end;
+            background-color: gray;
+            border: none;
+            color: black;
+        }
+    form{
+        background-color: gray;
+        margin: 50px 30%;
+        margin-bottom: 0px;
+        height: 60%;
+        width: 500px;
+        align-items: center;
+        padding: 50px;
+       
+        p{
+            color: #fff;
+            font-size: 20px;
+        }
+        h2{
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+        input{
+            display: block;
+            background-color: #454545;
+            height: 25px;
+            width: 400px;
+            border-bottom: 5px solid #5f421d;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: #e50913;
+            color: #fff;
+            width: 410px;
+            height: 50px;
+            font-size: 20px
+        }
+        a{
+            display: block;
+        }
+    }
+}

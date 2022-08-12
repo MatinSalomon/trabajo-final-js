@@ -13,7 +13,7 @@ body{
                         'footer footer footer footer' ;
     background-color: #141414;
 }
-//empieza cabecera
+/* ? empieza cabecera */
 header{
     display: flex;
     grid-area: header;
@@ -36,8 +36,8 @@ header{
 
     }
 }
-//empieza cabecera
-
+/* ? Termina cabecera */
+/* ? empieza menu */
 nav{
     grid-area: nav;
     height: 50px;
@@ -64,12 +64,14 @@ main{
         }
     }
 }
-
+/* ? termina menu */
+/* ? empieza pie de pagina */
 footer{
     grid-area: footer;
     background-color: red;
     height: 300px;
 }
+/* ? termina pie de pagina */
 
 }/* ! aca termina la vista desktop */
 
