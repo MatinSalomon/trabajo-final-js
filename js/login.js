@@ -29,8 +29,25 @@ formRegistro.addEventListener('submit', (e) => {
     const datosRegistro = [];
 
     datosRegistro.push(datos);
-    localStorage.setItem("datosRegistro", JSON.stringify(datosRegistro));
-})});
+    
+    if(emailRegistro.length > 0 && emailRegistro.includes ('@') && emailRegistro.includes('.')) {
+       localStorage.setItem("datosRegistro", JSON.stringify(datosRegistro));
+       console.log("datos enviados")
+     Swal.fire({
+        title: 'Exito!',
+        text: 'Do you want to continue',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+
+    }else {
+        Swal.fire({
+            title: 'ERROR!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+          })
+}})})
 
 const btnForm = d.getElementById('btnForm')
 const formulario = document.getElementById('formulario')
