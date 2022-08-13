@@ -32,7 +32,7 @@ formRegistro.addEventListener('submit', (e) => {
     
     if(emailRegistro.length > 0 && emailRegistro.includes ('@') && emailRegistro.includes('.')) {
        localStorage.setItem("datosRegistro", JSON.stringify(datosRegistro));
-       console.log("datos enviados")
+
      Swal.fire({
         title: 'Exito!',
         text: 'Do you want to continue',
@@ -66,10 +66,15 @@ btnForm.addEventListener('click', () => {
 
     if(email == datosRegistroS[0].emailRegistro && password == datosRegistroS[0].passwordRegistro){
         
-        window.location.replace("../index.html");
+        window.location.replace("main.html");
     }else {
-        
-        console.log("Acceso denegado ");
+
+        Swal.fire({
+            title: 'ERROR!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+          })
 
     }
 })});
