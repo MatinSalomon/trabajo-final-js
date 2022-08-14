@@ -17,7 +17,13 @@
 #login #formularioRegistro {
   display: none;
 }
-#login #salir {
+#login .salir {
+  text-align: end;
+  background-color: gray;
+  border: none;
+  color: black;
+}
+#login .salir2 {
   text-align: end;
   background-color: gray;
   border: none;

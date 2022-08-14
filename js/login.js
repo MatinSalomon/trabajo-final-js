@@ -2,9 +2,6 @@ const d = document;
 const btnFormRegi= d.getElementById('btnFormRegi')
 const formRegistro = d.getElementById('formularioRegistro')
 
-const salir = d.getElementById('salir')
-
-
 
 btnFormRegi.addEventListener('click', () => {
     formRegistro.style.display = 'block'
@@ -35,7 +32,7 @@ formRegistro.addEventListener('submit', (e) => {
 
      Swal.fire({
         title: 'Exito!',
-        text: 'Do you want to continue',
+        text: 'Registro exitoso',
         icon: 'success',
         confirmButtonText: 'Cool'
       })
@@ -43,7 +40,7 @@ formRegistro.addEventListener('submit', (e) => {
     }else {
         Swal.fire({
             title: 'ERROR!',
-            text: 'Do you want to continue',
+            text: 'Email no valido',
             icon: 'error',
             confirmButtonText: 'Cool'
           })
@@ -71,7 +68,7 @@ btnForm.addEventListener('click', () => {
 
         Swal.fire({
             title: 'ERROR!',
-            text: 'Do you want to continue',
+            text: 'Email o contraseña incorrectos',
             icon: 'error',
             confirmButtonText: 'Cool'
           })
@@ -79,8 +76,12 @@ btnForm.addEventListener('click', () => {
     }
 })});
 
-salir.addEventListener('click', () =>{
-    formulario.style.display = 'none'
+const salir2 = d.getElementsByClassName('salir2')[0]
+salir2.addEventListener('click', () => {
     formRegistro.style.display = 'none'
-    
+})
+
+const salir = d.getElementsByClassName("salir")[0]
+salir.addEventListener('click', () => {
+    formulario.style.display = 'none'
 })

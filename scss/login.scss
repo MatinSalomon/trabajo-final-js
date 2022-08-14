@@ -16,7 +16,13 @@
     #formularioRegistro{
         display: none;
     } 
-    #salir{
+    .salir{
+            text-align: end;
+            background-color: gray;
+            border: none;
+            color: black;
+        }
+    .salir2{
             text-align: end;
             background-color: gray;
             border: none;
