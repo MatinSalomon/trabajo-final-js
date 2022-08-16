@@ -11,7 +11,7 @@ class pelicula{
         this.duracion = duracion;
         this.precio = precio;
     }
-    sumarIva(){
+    sumarIva(){ 
         this.precio *= 1.21;
     }
 
