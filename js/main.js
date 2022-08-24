@@ -1,5 +1,16 @@
 let enviar= document.getElementById("enviar");   
 let peliBuscar = document.getElementById("buscarPeli");
+
+const api = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCB1d0urSX-_jl18TrFN0YUw&part=snippet%2Cid&order=date&maxResults=50'
+
+const GET = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1ec96ba036msh73b8a713a67a9f1p13a427jsn1aaddd13ab41',
+		'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+	}
+};
+
 /**
  * clase para las peliculas
  */

@@ -51,12 +51,19 @@
     color: #fff;
     font-size: 60px;
   }
-  main div ul {
+  main div div {
     list-style: none;
+    text-align: left;
+    padding: 0%;
+    width: 320px;
   }
-  main div ul li {
-    font-size: 30px;
+  main div div img {
+    width: 320px;
+    height: 280px;
+  }
+  main div div .pDeVideo {
     color: #fff;
+    margin: 0%;
   }
   /* ? termina menu */
   /* ? empieza pie de pagina */
