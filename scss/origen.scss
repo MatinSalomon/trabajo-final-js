@@ -59,14 +59,20 @@ main{
             list-style: none;
             text-align: left;
             padding: 0%;
+            padding-right: 60px;
             width: 320px;
-            img{
-                width: 320px;
-                height: 280px;
-            }
-            .pDeVideo{
-                color: #fff;
-                margin: 0%;
+            display: inline;
+            div{
+                display: inline-flex;
+                flex-direction: column;
+                img{
+                    width: 320px;
+                    height: 280px;
+                }
+                .pDeVideo{
+                    color: #fff;
+                    margin: 0%;
+                }
             }
         }
     }
